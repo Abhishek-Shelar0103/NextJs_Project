@@ -22,6 +22,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/BookingList/page.jsx", "src/app/Events/new/page.jsx", "src/app/Events/page.jsx", "src/app/components/BookForm.jsx", "src/app/components/Help.jsx", "src/app/components/Promt.tsx", "src/app/booktable/page.jsx", "src/app/About/page.jsx", "src/app/Help/page.jsx", "src/app/Home/page.jsx"],
   "exclude": ["node_modules"]
 }
