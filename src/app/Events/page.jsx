@@ -17,7 +17,9 @@ export default function EventsPage() {
   return (
     <div className="min-h-screen bg-gray-50 py-12">
       <div className="container mx-auto px-4 max-w-4xl bg-white shadow-lg rounded-2xl p-6">
-        <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">📅 Event Bookings</h1>
+        <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">
+          📅 Event Bookings
+        </h1>
 
         <div className="flex justify-end mb-4">
           <Link
@@ -34,11 +36,15 @@ export default function EventsPage() {
           <ul className="space-y-4">
             {events.map((event) => (
               <li
-                key={event._id}
+                key={event.name}
                 className="p-4 border rounded-lg shadow-sm bg-gray-50 hover:shadow-md transition"
               >
-                <h2 className="text-xl font-semibold text-gray-800">{event.name}</h2>
-                <p className="text-gray-600">Date: {new Date(event.date).toLocaleDateString()}</p>
+                <h2 className="text-xl font-semibold text-gray-800">
+                  {event.name}
+                </h2>
+                <p className="text-gray-600">
+                  Date: {new Date(event.date).toLocaleDateString()}
+                </p>
                 <p className="text-gray-600">Guests: {event.guests}</p>
                 <p className="text-gray-600">Contact: {event.contact}</p>
               </li>
